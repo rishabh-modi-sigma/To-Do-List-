@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:"Montserrat", sans-serif;
+    box-sizing:border-box;
+}
+
+.container{
+    width:100%;
+    min-height:100vh;
+    background:linear-gradient(135deg,#153677,#4e085f);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.to-doapp{
+    width:100%;
+    max-width:540px;
+    background-color:#fff;
+    border-radius:10px;
+    margin:100px auto 20px;
+    padding:40px 30px 70px;
+}
+.to-doapp h2{
+    font-size:35px;
+    font-weight:bold;
+    letter-spacing:2px;
+    padding:10px;
+    color:#002765;
+    font-family:arial;
+}
+h2 img{
+    width:30px;
+    margin-left:5px;
+}
+.row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:#edeef0;
+    border-radius:30px;
+}
+.row input{
+    flex:1;
+    list-style:none;
+    outline:none;
+    border:none;
+    font-size:15px;
+    letter-spacing:1px;
+    text-transform:capitalize;
+    background:transparent;
+    margin-left:16px;
+}
+.row #btn{
+    border:none;
+    text-align:center;
+    color:#fff;
+    outline:none;
+    border:none;
+    background:#ff5945;
+    padding:16px 50px;
+    border-radius:40px;
+    font-weight:700;
+    font-size:17px;
+    letter-spacing:1px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.list-container li{
+    padding:12px 8px 12px 50px;
+    font-size:20px;
+    color:#000;
+    letter-spacing:1px;
+    user-select:none;
+    text-transform:capitalize;
+    font-weight:400;
+    list-style:none;
+    position:relative;
+}
+.list-container li::before{
+   content:'';
+   position:absolute;
+   width:28px;
+   height:28px;
+   border-radius:50%;
+   background-image:url(sakshidi/color.png);
+   background-size:cover;
+   background-position:center;
+   top:12px; 
+   left:8px;
+}
+.list-container li.checked{
+ color:#555;
+ text-decoration:line-through;
+}
+.list-container li.checked::before{
+ background-image:url(sakshidi/clickicon.png);
+ background-size:cover;
+ background-position:center;
+}
+
+ li span{
+    position:absolute;
+    top:5px;
+    right:0;
+    width:40px;
+    height:40px;
+    color:#555;
+    font-size:37px;
+    line-height:40px;
+    text-align:center;
+    border-radius:50%;
+    
+}
+li span:hover{
+    background:#edeef0;
+}
